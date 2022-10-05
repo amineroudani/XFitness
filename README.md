@@ -1,2 +1,2 @@
 # XFitness
-The official Ecole Polytechnique Fitness Committee.
+The official Ecole Polytechnique Fitness Committee
