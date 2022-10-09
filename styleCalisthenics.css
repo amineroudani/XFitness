@@ -1,0 +1,11 @@
+.calisthenics-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 5rem;
+    
+}

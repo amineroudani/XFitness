@@ -1,0 +1,580 @@
+* {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+
+
+
+/* START of Hamburger menu  */
+
+#menu-toggle{
+    display: none;
+}
+
+.burger{
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute; 
+    cursor: pointer;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+
+}
+
+.bun{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.15s;
+}
+
+.bun-crust{
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    position: absolute;
+    left: 0.8rem;
+    background-color: white;
+    border-radius: 1px;
+    transition: transform 0.16s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.2s;
+
+}
+
+.bun-crust-top{
+    top: 1.4rem;
+    transform: translateY(-3px);
+}
+
+.bun-crust-bottom{
+    bottom: 1.4rem;
+    transform: translateY(3px);
+}
+
+#menu-toggle:checked + .burger .bun-top{
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .burger .bun-bottom{
+    transform: rotate(-45deg);
+}
+
+#menu-toggle:checked + .burger .bun-crust-top, 
+#menu-toggle:checked + .burger .bun-crust-bottom {
+    transform: none;
+    transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+} 
+
+/* END of Hamburger menu  */
+
+
+a{
+    display:  block;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+    
+}
+
+header{
+    position: relative;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 100;
+    /* backdrop-filter: saturate(180%) blur(2rem); */
+    
+}
+
+.nav-link{
+    height: 100%;
+    height: 5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+    opacity: 0.9;
+    transition:  color 0.2s ease-in;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    color: #0bb1f4;
+    text-decoration: none;
+}
+
+.nav-link-logo{
+    position: static;
+    width: 13rem;
+    height: 5rem; 
+    z-index: 10;    
+    /* use height and width of image you are usind */
+}
+.nav-link-logo img{
+    width: 13rem;
+    height: auto;
+}
+
+
+.burger-menu, .nav-item-mobile-only{
+    display: none;
+}
+
+.nav-dropdown{
+    list-style: none;
+    width: 60%;
+    max-width: 100rem;
+    align-items: center;
+    align-self: center;
+
+
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}   
+
+
+    
+.nav-mobile{
+    height: 5rem;
+    
+}
+
+.burger{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+}
+
+
+/* redo the same as above for any other ICONS */
+
+
+ /* The common class for all tabs */
+
+/* MEDIUM screen devices */
+@media screen and (max-width: 1068px) {
+    /* Here change the images to medium images: 
+     i.e. sed background: url("..._medium.jpg" */
+}
+  
+/* SMALL screen devices (PHONES) */
+@media screen and (max-width: 800px){
+    /* Here change the images to small images: 
+     i.e. SET background: url("..._medium.jpg" */
+     .burger-menu, .nav-item-mobile-only{
+        display: block;
+    }
+
+    .burger{
+        height: 0;
+    }
+
+    .nav-link{
+        opacity: 1;
+        font-weight: 500;
+    }
+
+     .burger > .nav-dropdown{  
+        background-color: #0bb1f4;
+        border-top: none;
+        height: 0;
+        transition: height 0.4s ease;
+    }
+
+    #menu-toggle:checked + .burger > .nav-dropdown{
+        height: 100vh;
+        border-top: 1px solid white;
+        
+
+
+    }
+  
+    .burger-menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+   
+    .nav-main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 0;
+        list-style: none; 
+        position: absolute;
+        z-index: 1000;   
+    }
+
+    .nav-dropdown{
+        width: 100vw;
+        left: 0;
+        top: 5rem;
+        position: fixed;
+        text-align: center;
+        display: block;
+        border-top: 1px solid white;
+
+        flex-direction: column;
+    }
+
+        
+
+
+    .nav-item{
+        display: inline-block;
+        width: 75%;
+        border-top: 1px solid white
+    }
+
+    .nav-item:nth-child(2){
+        border-top: none;
+    }
+
+    
+
+    .nav-item-desktop-only{
+        display: none;
+    }
+
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+    .nav-link:hover{
+        color: #fff;
+    }
+
+
+    .about-us{
+        display: inline-block;
+        width: 75%;
+    }
+
+}
+
+
+.page-title{
+    font-size: 3rem;
+    color: #1d1d1f;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+   text-align: center;
+   padding: 2rem;
+}
+
+.basic-text{
+    font-size: 1.7rem;
+    line-height: 1.38;
+    font-weight: 400;
+    /* letter-spacing: 0.011em; */
+    padding: 2rem;
+    display: inline-block;
+    color: #1d1d1f;
+}
+/* ------------------------------------------------------ */
+/* Home Page */
+.under{
+    position: sticky;
+    top: 0;
+    background-color: red;
+    height: 75vh;
+    width: 100vw;
+ 
+}
+
+.wrapper{
+    height: 300vh;
+}
+
+.over{
+    margin-top: -225vh;
+    position: relative;
+    height: 700vh;
+    width: 100vw;
+    background-color: #009DE4;
+}
+
+/* ------------------------------------------------------ */
+/* Welcome */
+
+.video-container{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    display: block;
+
+}
+
+.backgroundVideo{
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    
+}
+
+.welcome-container{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    display: inline-block;
+    
+}
+
+.welcome-message{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-size: 2.9rem;
+    width: 100vw;
+    height: 75vh;
+    padding-top: 30vh;
+    padding-left: 5vh;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: saturate(180%) blur(0.1rem); 
+
+}
+
+/* ------------------------------------------------------ */
+/* Goals */
+
+.goals-container{
+    width: 100vw;
+    
+
+    color: white;
+    background-color: black;
+    padding: 4rem ;
+}
+
+
+
+.blue-heading{
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    background: linear-gradient(circle at 10%, #5AC8FA 50%, #009DE4 60%, #194BB5 70%); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    max-width: 300px ;
+    margin: auto;
+    
+
+}
+
+.goals-list, .pillars-list{
+    list-style-type: none;
+    font-size: 3rem;
+}
+
+.goal, .pillar{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+/* ------------------------------------------------------ */
+/* Browse/ Carousel */
+.browse-container{
+    background-color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.browse-descripition{
+    padding-left: 4rem;
+}
+
+.carousel-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+  
+.box {
+    height: 260px;
+    width: 260px;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #0bb1f4;
+    margin-right: 10px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.carousel-img {
+    width: 220px;
+    max-width: 350px;
+    
+}
+
+.training-img{
+    width: 220px;
+}
+
+.nutrition-img{
+    width: 190px;
+    padding-top: 10px;
+}
+
+.supplements-img{
+    width: 200px;
+    padding: 20px;
+}
+
+.faq-img{
+    width: 200px;
+}
+
+.calisthenics-img{
+    width: 250px;
+}
+
+.about-us-img{
+    width: 250px;
+    margin-top: -30px;
+}
+
+.food-img{
+    width: 190px;
+}
+  
+.first-box{
+    margin-left: 50%;
+}
+.last-box{
+    margin-right: 50%;
+}
+
+
+
+/* ------------------------------------------------------ */
+/* Get started */
+
+.get-started-container{
+    width: 100vw;
+    background-color: black;
+    color: white;
+
+}
+
+/* WATCH OUT WITH THE I */
+.get-started-container .basic-text, .pillar-section .basic-text{
+    font-size: 1.7rem;
+    color: #b3b3b7;
+    font-weight: 500;
+    line-height: 1.19048;
+    letter-spacing: .011em;
+    padding: 3rem;
+
+}
+
+
+
+.in-text-link {
+    cursor: pointer;
+    font-size: 1.7rem ;
+    color: white;
+    display: inline-block;
+}
+
+i{
+    font-size: 1.7rem ;
+    font-weight: 500;
+    font-style: italic; 
+    color: white;
+}
+
+.basic-text b{
+    font-size: 1.7rem ;
+    color: white;
+}
+
+.pillar{
+    margin-left: 4rem;
+}
+
+.pillar-section{
+    height: 100vh;
+    width: 100vw;
+}
+
+.pillar1-title, .pillar2-title, .pillar3-title{    
+    width: 100vw;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.pillar1-description, .pillar2-description, .pillar3-description{
+    font-size: 3rem;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.pillar1-section, .pillar2-section, .pillar3-section{
+    padding-top: 4rem;
+    height: 70vh;
+    width: 100vw;
+
+    background-color: black;
+
+    /* position: sticky;
+    top: 0;
+    overflow-x: hidden ;
+    overflow-y: hidden; */
+}
+
+
+.pillar1-container, .pillar2-container, .pillar3-container{
+    width: 100vw;
+    height: 400vh;
+    background-color: blueviolet;
+
+}
+
+.pillar2-section{
+   
+    background-color: green;
+
+}
+
+.pillar3-section{
+    background-color: #194BB5;
+}

@@ -1,0 +1,269 @@
+.slider{
+    position: fixed;
+    z-index: 1;
+    height:5.5rem;
+    width: 50%;
+    background-color: #0bb1f4;
+    bottom: 0;
+}
+
+
+.nav2 {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    bottom: 0;
+    display: flex;
+    z-index: 2;
+} 
+
+
+.nav2-link{
+    height: 100%;
+    height: 5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+    opacity: 0.9;
+    transition:  color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.nav2-link{
+    text-align: center;
+    height: 5rem;
+}
+
+
+.nav2-link:hover{
+    opacity: 1;
+    color: #0bb1f4;
+}
+
+
+#container {
+    width: 100vw;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+  }
+  
+  #content {
+    height: 100%;
+    width: 200vw;
+    display: flex;
+  }
+
+section {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    scroll-snap-align: start;
+    
+} 
+
+
+section:nth-of-type(1){
+    background-color: #f7f7f7;
+    color: black;
+}
+
+
+section:nth-of-type(2){
+    background-color: coral;
+    color: #0bb1f4;
+}
+
+
+
+
+
+.training {
+    color: #0bb1f4;
+}
+
+.about-us{
+    width: 7.6rem;
+}
+
+
+
+/* redo the same as above for any other ICONS */
+
+
+ /* The common class for all tabs */
+
+/* MEDIUM screen devices */
+@media screen and (max-width: 1068px) {
+    /* Here change the images to medium images: 
+     i.e. sed background: url("..._medium.jpg" */
+}
+
+
+
+/* SMALL screen devices (PHONES) */
+@media screen and (max-width: 800px){
+    /* Here change the images to small images: 
+     i.e. SET background: url("..._medium.jpg" */
+ 
+    .training {
+        color: white;
+    }
+    
+}
+
+
+section:nth-of-type(1){
+    background-color: white;
+    color: #1d1d1f;
+}
+
+
+section:nth-of-type(2){
+    background-color:  #f5f5f7;
+    color: #0bb1f4;
+}
+/* ________________________________________________________________________________________________ */
+/* Training -> LEFT CONTAINER */
+.left-container{
+    width: 100vw;
+    background-color: white;
+}
+
+.left-card{
+    width: 90vw;
+    max-width:1000px;
+    padding: 1rem;
+    background: #f5f5f7;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-top: 3rem;
+
+}
+
+
+
+h4 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+
+/* ________________________________________________________________________________________________ */
+/* Training -> RIGHT CONTAINER */
+
+.programs-intro-container{
+    padding: 2rem;
+    margin: auto
+}
+
+
+.programs-intro-container h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.right-container{
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+.right-card{
+    width: 90vw;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 5vh;
+
+}
+
+
+
+.advanced-programs{
+    margin-bottom: 15vh;
+}
+
+h1{
+    color: #0bb1f4;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.advanced-programs h2{
+    background: linear-gradient(90deg, #ff0808 0%, #ff5b00 30%, #ffd800 70%);
+    -webkit-background-clip: text;
+
+}
+
+.intermediate-programs h2{
+    background: linear-gradient(90deg, #8e08ff 0%, #c104e2 30%, #ff00bf 70%);
+    -webkit-background-clip: text;
+}
+
+.beginner-programs h2{
+    background: linear-gradient(90deg, #23dd00 0%, #00ff6f 30%, #00ffe0 70%);
+    -webkit-background-clip: text;
+
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    -webkit-text-fill-color: transparent;
+    max-width: 250px;
+
+}
+
+.program-title-container{
+    width: 100%;
+    border-bottom: 1px solid rgb(210, 210, 215);
+}
+
+
+/*  */
+
+.program-container a{
+    color: #0066CC;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.program-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+  }
+  
+  /* Additional formatting for arrow icon */
+  i.arrow {
+      /* top: 2pt; Uncomment this to lower the icons as requested in comments*/
+      width: 0.8rem;
+      height: 0.8rem;
+      border-right: 0.15rem solid #0066CC;
+      border-top: 0.15rem solid #0066CC;
+      transform: rotate(45deg);
+      margin-bottom: 0.2rem;
+  }
+
+  h3{
+    font-size: 2rem;
+    padding: 2rem;
+    color: #1d1d1f;
+  }

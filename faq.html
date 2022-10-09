@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name = "theme-color" content = "#000000">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleFaq.css">
+    <script src="scriptFaq.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    <title>OnlyGains</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-main">
+                <li class="nav-mobile">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="burger">
+                        <div class="burger-menu">
+                            <span class="bun bun-top">
+                                <span class="bun-crust bun-crust-top"></span>
+                            </span>
+                            <span class="bun bun-bottom">
+                                <span class="bun-crust bun-crust-bottom"></span>
+                            </span>
+                        </div>
+                        
+                        <ul class=" nav-dropdown">
+                            <li class="nav-item nav-item-desktop-only">
+                                <a href="index.html" class="nav-link-logo "> 
+                                    <img src="logo/OnlyGainsWhite.png">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="training.html" class="nav-link training">Training</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="exercises.html" class="nav-link">Exercises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="nutrition.html" class="nav-link">Nutrition</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="calisthenics.html" class="nav-link">Calisthenics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="suplements.html" class="nav-link">Supplements</a>
+                            </li> 
+                            <li class="nav-item nav-item-hidden">
+                                <a href="faq.html" class="nav-link">FAQ</a>
+                            </li> 
+                            <li class="nav-item nav-item-hidden">
+                                <a href="about-us.html" class="nav-link about-us">About us</a>
+                            </li> 
+                        </ul>
+                    </label>   
+                </li>
+                <li class="nav-mobile nav-item-mobile-only">
+                    <a href="index.html" class="nav-link-logo logo-mobile">
+                        <img src="logo/OnlyGainsWhite.png">
+                    </a>
+                </li>
+             </ul>
+        </nav>
+    </header>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- FAQ page below -->
+
+    <h1 class="page-title">Frequently Asked Questions</h1>
+    <div class="contents bassic-text">
+        Jump directly to 
+        <div class="section-list">
+            <a href="#section1" class="section-title"><i class="arrow"></i>Gym Misconceptions</a>
+            <a href="#section2" class="section-title"><i class="arrow"></i>Where to train</a>
+            <a href="#section3" class="section-title"><i class="arrow"></i>Exellent recourses</a>
+        </div>
+    </div>
+    <section id="section1">
+        <h1>Gym Misconceptions</h1>
+        <input type="checkbox" id="checkbox1" onclick="test(1);">
+        <label for="checkbox1" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        Stretching before working out
+                    </div>
+                    <i class="arrow2 i1"></i>
+                </div>
+                
+                <div class="a1-container answers-container ">
+                    <div class="a1 answers basic-text">
+                        We can distinguish two types of stretches: 
+                        dynamic and static stretching. Both important, 
+                        but serve very different roles
+                        Dynamic stretching is recommended as a warm up 
+                        prior to a workout as it will enhance performance
+                        and reduce injury risk.
+                        On the other hand, static stretching as a warm up 
+                        should be avoided as it has show to reduce your 
+                        strength and muscle stability during the workout. 
+                        Therefore, it’s better stretch statically after 
+                        working out or at some other time of the day instead.
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox2" onclick="test(2);">
+        <label for="checkbox2" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        “Anabolic Window”
+                    </div>
+                    <i class="arrow2 i2"></i>
+                </div>
+                
+                <div class="a2-container answers-container">
+                    <div class="a2 answers basic-text">
+                        People say that you NEED to eat large amounts of protein 
+                        and eat a big meal 30 minutes after your workout otherwise 
+                        you lose all your gains. This isn't true. It is important 
+                        to keep yourself satiated and eat your meals an appropriate
+                        distance apart, but 30 minutes is a bit harsh. To optimise 
+                        results in the gym and to keep your energy levels constant,
+                        eat at the latest your meal 3-4 hours after gym.
+
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox3" onclick="test(3);">
+        <label for="checkbox3" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        Targeted Fat Loss
+                    </div>
+                    <i class="arrow2 i3"></i>
+                </div>
+                
+                <div class="a3-container answers-container">
+                    <div class="a3 answers basic-text">
+                        Fat distribution across your body is 100% genetic.
+                        Furthermore, it is impossible to target fat loss.
+                        Doing crunches won’t burn fat in your abs, you're wasting 
+                        your time. You just have to gradually lose fat and expect
+                        some areas of your body to take much longer than others.
+                        That's just how it is.
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox4" onclick="test(4);">
+        <label for="checkbox4" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        Excluding macronutrients, “Keto”, no fats
+                    </div>
+                    <i class="arrow2 i4"></i>
+                </div>
+                
+                <div class="a4-container answers-container">
+                    <div class="a4 answers basic-text">
+                        A magic simply diet does not exist. You're not gonna lose weight
+                        just by cutting out carbs. Of course, you have to find what
+                        works best for you based on your health and ethics. So if you
+                        wish to try out a diet, be careful with it and take your time.
+                        However, in general, we need a balanced diet to be healthy. 
+                        We need to eat an appropriate amount of each food group, and 
+                        especially have a balance between our macronutrients, 
+                        fats, proteins, carbohydrates. Excluding food groups can have 
+                        drastic impacts on your mood, energy levels, focus, and health.
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox5" onclick="test(5);">
+        <label for="checkbox5" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        No Pain, No Gain
+                    </div>
+                    <i class="arrow2 i5"></i>
+                </div>
+                
+                <div class="a5-container answers-container">
+                    <div class="a5 answers basic-text">
+                        The feeling of "pain" is an indicator that you 
+                        are training close to your limit. This can be your 
+                        muscles burning at the end of a set or the 
+                        muscle soreness the day after a workout. 
+                        Although it is important to occasionally take 
+                        workouts to failure, waking up very sore the next  
+                        day generally means that you went too hard the day before. 
+                        In this case, dial back the intensity in your next 
+                        workout,and gradually build up to the point where 
+                        you can tolerate a more intense workout. Remember, 
+                        take it slow and steady.
+                        Having said that, most beginners underestimate their 
+                        point of failure. For this reason, you shouldn't be 
+                        scared to test out your limits <b>occasionally</b>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox6" onclick="test(6);">
+        <label for="checkbox6" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        Training will get me bulky 
+                    </div>
+                    <i class="arrow2 i6"></i>
+                </div>
+                
+                <div class="a6-container answers-container">
+                    <div class="a6 answers basic-text">
+                        Sorry to break it to you but 99.9999% of the 
+                        time you do not have elite genetics. Building 
+                        muscle is a very slow process so you won’t
+                        gain 10kg of muscle overnight. People can spend 
+                        their entire lives training, eating, sleeping 
+                        perfectly just to look that much more muscular, 
+                        and you're not going to get there just from going 
+                        to the gym once. You are in control of how you 
+                        look.
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox7" onclick="test(7);">
+        <label for="checkbox7" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        Training will make me short
+                    </div>
+                    <i class="arrow2 i7"></i>
+                </div>
+                
+                <div class="a7-container answers-container">
+                    <div class="a7 answers basic-text">
+                        The concern is that weight training can 
+                        injure the areas of the bone that grow 
+                        (the growth plates) and limit stature. 
+                        This, aside from a direct injury to the 
+                        spine from irresponsible training, does 
+                        not occur. This type of injury would in 
+                        fact be more common in high impact sports 
+                        like football, rugby, basketball, even 
+                        running.
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox8" onclick="test(8);">
+        <label for="checkbox8" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+                        How long should I rest between sets?
+                    </div>
+                    <i class="arrow2 i8"></i>
+                </div>
+                
+                <div class="a8-container answers-container">
+                    <div class="a8 answers basic-text">
+                        This varries from person to person and depends on the exercise. You 
+                        have to go to the gym, try different rest periods and see what works 
+                        best for you.
+                        However, here are some basic approximations:
+                        <br>
+                        <b>Coumpound exercises</b> (e.g. squat, pull-ups): 3-4min
+                        <br>
+                        <b>Isolation exercises</b> (e.g. bicep curls, lateral raises): 2min
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox9" onclick="test(9);">
+        <label for="checkbox9" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+
+                    </div>
+                    <i class="arrow2 i9"></i>
+                </div>
+                
+                <div class="a9-container answers-container">
+                    <div class="a9 answers basic-text">
+            
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox10" onclick="test(10);">
+        <label for="checkbox10" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+
+                    </div>
+                    <i class="arrow2 i10"></i>
+                </div>
+                
+                <div class="a10-container answers-container">
+                    <div class="a10 answers basic-text">
+            
+                    </div>
+                </div>
+
+            </div>
+        </label>
+        <input type="checkbox" id="checkbox11" onclick="test(11);">
+        <label for="checkbox11" class="checkbox-container">
+            <div class="button-container" id="myButton">
+                <div class="question-container">
+                    <div class="question">
+
+                    </div>
+                    <i class="arrow2 i11"></i>
+                </div>
+                
+                <div class="a11-container answers-container">
+                    <div class="a11 answers basic-text">
+            
+                    </div>
+                </div>
+
+            </div>
+        </label>
+    </section>
+
+    <section id="section2">
+        <h1>Where to train on campus?</h1>
+        <ul class="locations-list">
+            <li class="location">
+                <div class="location-name">
+                    CSX Gym
+                </div>
+                <div class="location-inner">
+                    <img class="location-img" src="profiles/placeholder.png">
+                    <ul class="opening-hours">
+                        <h4>Opening Hours</h4>
+                        <li class="day">Monday</li>     <li class="hours"><b>07:00 - 08:30</b>, 12:00 - 13:15, 17:30 - 19:00</li>
+                        <li class="day">Tuesday</li>    <li class="hours">17:00 - 18:30</li>
+                        <li class="day">Wednesday</li>  <li class="hours">12:00 - 13:15</li>
+                        <li class="day">Thursday</li>   <li class="hours">12:00 - 13:15, 17:00 - 18:30</li>
+                        <li class="day">Friday</li>     <li class="hours">12:00 - 13:15</li>
+                        <li class="day">Saturday</li>   <li class="hours">CLOSED</li>
+                        <li class="day">Sunday</li>     <li class="hours">CLOSED</li>
+                    </ul>
+                </div>
+                <div class="short-description basic-text">
+                    Description here
+                </div>
+            </li>
+            <li class="location">
+                <div class="location-name">
+                   Calisthenics Park
+                </div>
+                <div class="location-inner">
+                    <img class="location-img" src="profiles/placeholder.png">
+                    <ul class="opening-hours">
+                        <h4>Opening Hours</h4>
+                        <li class="day">Everyday</li>  <li class="hours">24</li>
+                    </ul>
+                </div>
+                <div class="short-description basic-text">
+                    Description here
+                </div>
+            </li>
+            <li class="location">
+                <div class="location-name">
+                    Bars in courtyard
+                </div>
+                <div class="location-inner">
+                    <img class="location-img" src="profiles/placeholder.png">
+                    <ul class="opening-hours">
+                        <h4>Opening Hours</h4>
+                        <li class="day">Everyday</li>  <li class="hours">24</li>
+                    </ul>
+                </div>
+                <div class="short-description basic-text">
+                    Description here
+                </div>
+            </li>
+            <!-- <li class="location">Ensta Gym</li> -->
+        </ul>
+
+    </section>
+
+    <section id="section3">
+        <h1>Exellent Resources</h1>
+        <ul class="resources-list">
+            <li class="resource">
+                <a href="https://www.youtube.com/c/JeffNippard" class="resource-link basic-text" target="_blank">Jeff Nippard</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Research-based training.
+                </div>
+            </li>
+            <li class="resource">
+                <a href="https://www.youtube.com/user/JoeDelaneyy" class="resource-link basic-text" target="_blank">Joe Delaney</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Good info with no bs.
+                </div>
+            </li>
+            <li class="resource">
+                <a href="https://www.instagram.com/squat_university/" class="resource-link basic-text" target="_blank">Squat University</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Go-to for mobility, lifting form, and injury rehab/prevention
+                </div>
+            </li>
+            <li class="resource">
+                <a href="https://www.youtube.com/c/MorePlatesMoreDates " class="resource-link basic-text" target="_blank">More Plates More Dates</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Hyper articulation and bro phrases all in one place.
+                </div>
+            </li>
+            <li class="resource">
+                <a href="https://www.youtube.com/user/FitnessFAQs" class="resource-link basic-text" target="_blank">FitnessFAQs</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Calisthenics/Hybrid training
+                </div>
+            </li>
+            <li class="resource">
+                <a href="https://www.youtube.com/user/gregdoucette " class="resource-link basic-text" target="_blank">Greg Doucette</a>
+                <br>
+                <div class="resource-description basic-text">
+                    Aladdin Parrot selling you cook books
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+</body>
+</html>
+
+

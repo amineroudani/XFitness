@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "theme-color" content = "#000000">
+    <link rel="icon" href="icons/oldicons/DBicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scriptNavbar.js" defer></script>
+    <script src="scriptIndex.js" defer></script>
+    <title> OnlyGains </title>
+</head>
+<!-- func() ensures that gradients are loaded properly -->
+<body onload="func();">
+    <header>
+        <nav class="nav">
+            <ul class="nav-main">
+                <li class="nav-mobile">
+                    <input type="checkbox" id="menu-toggle" onclick="stopScroll();">
+                    <label for="menu-toggle" class="burger">
+                        <div class="burger-menu">
+                            <span class="bun bun-top">
+                                <span class="bun-crust bun-crust-top"></span>
+                            </span>
+                            <span class="bun bun-bottom">
+                                <span class="bun-crust bun-crust-bottom"></span>
+                            </span>
+                        </div>
+                        
+                        <ul class=" nav-dropdown">
+                            <li class="nav-item nav-item-desktop-only">
+                                <a href="index.html" class="nav-link-logo "> 
+                                    <img src="logo/OnlyGainsWhite.png">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="training.html" class="nav-link training">Training</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="exercises.html" class="nav-link exercises">Exercises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="nutrition.html" class="nav-link nutrition">Nutrition</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="calisthenics.html" class="nav-link calisthenics">Calisthenics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="suplements.html" class="nav-link">Supplements</a>
+                            </li>
+                            <li class="nav-item nav-item-hidden">
+                                <a href="faq.html" class="nav-link faq">FAQ</a>
+                            </li> 
+                            <li class="nav-item nav-item-hidden">
+                                <a href="about-us.html" class="nav-link about-us">About us</a>
+                            </li> 
+                        </ul>
+                    </label>   
+                </li>
+                <li class="nav-mobile nav-item-mobile-only">
+                    <a href="index.html" class="nav-link-logo logo-mobile">
+                        <img src="logo/OnlyGainsWhite.png">
+                    </a>
+                </li>
+             </ul>
+        </nav>
+    </header>
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- Home page -->
+ 
+        <div class="wrapper">
+            <section class="under">
+                <div class="welcome-container">
+                    <div class="video-container">
+                        <video autoplay muted loop class="backgroundVideo">
+                            <source src="GymVideoSmaller.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="welcome-message">                  
+                        Welcome to OnlyGains. 
+                        <p>The official bachelor committee for training and fitness.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="over">
+            <div class="goals-container" >
+                <h2 class="blue-heading">Our Goals</h2>
+                <ul class="goals-list">
+                    <li class="goal">Help you get into fitness</li>
+                    <li class="goal">Teach you about fitness</li>
+                    <li class="goal">Help you set and achieve goals</li>
+                </ul>
+            </div>
+            <div class="browse-container">
+                <h2 class="blue-heading">Browse</h2>
+                <div class="basic-text browse-descripition">
+                    Below are some of the simple services we provide to 
+                    committee members. Feel free to look around.
+                    If you are new to the gym, keep scrolling to read
+                    about getting started.
+                </div>
+                <div class="carousel-container">
+                    <a class="box training-programs first-box" href="training.html">
+                        <h3>Training Programs</h3>
+                        <img class="carousel-img training-img" src="icons/trainingicon2.png">
+                    </a>
+                    <a class="box browse-exercises" href="exercises.html">
+                        <h3>Browse Exercises</h3>
+                        <img class="carousel-img exercises-img" src="icons/dumbbellicon2.png">
+                    </a>
+                    <a class="box nutrition-info" href="nutrition.html">
+                        <h3>Nutrition Information</h3>
+                        <img class="carousel-img nutrition-img" src="icons/nutritionicon.png">
+                    </a>
+                    <a class="box supplements" href="nutrition.html">
+                        <h3>Supplements</h3>
+                        <img class="carousel-img supplements-img" src="icons/supplementsicon.png">
+                    </a>
+                    <a class="box faqs" href="faq.html">
+                        <h3>FAQ</h3>
+                        <img class="carousel-img faq-img" src="icons/faqicon.png">
+                    </a>
+                    <a class="box calisthenics" href="calisthenics.html">
+                        <h3>Calisthenics</h3>
+                        <img class="carousel-img calisthenics-img" src="icons/calisthenicsicon.png">
+                    </a>  
+    
+                    <a class="box about-us" href="about-us.html">
+                        <h3>About us</h3>
+                        <img class="carousel-img about-us-img" src="icons/aboutusicons2.png">
+                    </a>
+                    <a class="box gym-food  last-box">
+                        <h3>Gym food</h3>
+                        <img class="carousel-img food-img" src="icons/footicon.png">
+    
+                    </a>
+    
+                </div>
+            </div>
+            
+    
+            <div class="get-started-container">
+                <h2 class="blue-heading get-started-heading">Get started</h2>
+                <div class="basic-text"> The biggest question holding someone 
+                back from going to the gym is,
+                <i> what do I do? </i> 
+                
+                    Going to the gym can be very overwhelming. The gym can be 
+                    a scary place and you might not know what to do. How should 
+                    I train? What exercises should I do?  What should I eat? How 
+                    often should I train? Am I sleeping enough? What do I do if 
+                    I don’t have enough time to go to the gym?
+                    You can get lost asking yourself these questions but don’t 
+                    worry, all the answers to those questions can be found on 
+                    this exact site or you could just ask 
+                    <a class="in-text-link" href="about-us.html"> us</a> 
+                    and we are happy to help (don’t be shy). 
+                    Let's break this down for a second. There are 
+                    <b >3 main pillars</b> 
+                    to training (and this applies to every single physical 
+                    activity).
+                   
+                
+                    
+                </div>
+                <ul class="pillars-list">
+                    <li class="pillar">Training</li>
+                    <li class="pillar">Nutrition</li>
+                    <li class="pillar">Recovery</li>
+                </ul>
+                <div class="basic-text">
+                    All 3 pillars are essential to making 
+                    <b>making progress</b> and <b>achieving your goals</b>.
+                    <br>
+                    <br>
+                    Be <b>consistent</b> with these pillars, and we
+                    <b>garantee</b> that you will make 
+                    <b>incredible progress</b>.
+                    <br>
+                    <br>
+                    Let's 
+                    look at these in more detail
+                </div>
+
+                <!-- <div class="pillar1-container"> -->
+                    <div class="pillar-section pillar1-section">
+                        <div class="pillar1-title">
+                            Training
+                        </div>
+                        <div class="pillar1-description basic-text">
+                            - <b>Sustainability</b>: choose a workout routine 
+                            that you can actually stick to.
+                            <br>
+                            - <b>Effort</b>: Train close to failure while 
+                            keeping good form and full range of 
+                            motion.
+                            <br>
+                            - <b>Progressive overload</b>: You should increase 
+                            weight and/or number of reps over time. 
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="pillar2-container"> -->
+                    <div class="pillar-section pillar2-section">
+                        <div class="pillar2-title">
+                            Nutrition
+                        </div>
+                        <div class="pillar2-description basic-text">
+                            - <b>Calories</b>: make sure you are eating enough 
+                            calories. A car can't drive without fuel.
+                            <br>
+                            - <b>Protein</b>: aim for 2g protein per kg body mass.
+                        
+    
+                        </div>
+                    </div>
+                <!-- </div> -->
+                
+                <!-- <div class="pillar3-container"> -->
+                    <div class="pillar-section pillar3-section">
+                        <div class="pillar3-title">
+                            Recovery
+                        </div>
+                        <div class="pillar3-description basic-text">
+                            - <b>Sleep</b>: non-negotiable 8 hours of sleep every night.
+                            <br>
+                            - <b>Rest-days</b>: your muscles "rebuild themselves" when 
+                            you rest them after a workout.
+                            If you don't rest enough, it will be counter-productive.
+                            Make sure you listen to your body and 
+                            allow for adequate rest between workouts.
+
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+        </section>
+</body>
